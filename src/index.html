@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifrado y descifrado con botones</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+
+<body>
+  <!--Pag1-->
+  <div id="contenedor">
+    <h1>Bienvenido a su portal</h1>
+    <h2>Cifrado y Descifrado de Mensajes</h2>
+    <h3>Por favor introduzca el mensaje y Offset deseado</p>
+    <div style="display:inline">  
+    <input type="text" id="mCifrar" placeholder="Mensaje">
+    <input type="number" id="ns" placeholder="Offset">
+    <h4>Seleccione la acción que desea ejecutar</h4>
+    
+    <div class="caja_padre">
+    <div class="caja1">
+    <button id="btncifrar" onclick="btncifrar()">encode</button>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    
+    <div class="caja2">
+    <button id="btndescifrar" onclick="btndescifrar()">decode</button>
+    </div>
+
+    <div class="caja3">
+     <img class="imagen" src="http://www.imagenonline.com/imagenes/1/995-f9533cfe937efaa12b3db11ce94b1e175012edb3.jpg" alt="">
+    </div>
+    </div>
+  </div>
+
+    <h4>Resultado</h4>
+    <div id="result">
+    <p id="resultado"></p>  
+    </div>
+  
+
+<script src="app.js"></script>
+      
+<div id="footer"></div>
+<h5>2019 Copyright AV Software Designs</h5>
+
+</body>
 </html>
+

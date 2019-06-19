@@ -1,1 +1,141 @@
 /* Acá va tu código */
+body {
+    font-family: Helvetica, Arial, Sans-serif;
+    color: white;
+    background-color: orange ;
+    text-align: center;
+    font-size: 28px;
+} 
+ 
+/*.main { flex: 20px } 
+.footer { order: 4; }
+
+#wrapper * {
+    padding: 20px;
+    font-size: 20px;
+    border: 20px solid rgba(0,0,0,0.5);
+  }
+*/
+
+h1{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
+
+h2{
+  color: gray;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
+h3{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
+h4{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+  margin: auto;
+}
+h5{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
+
+.contenedor1 {
+  background: #C45208;
+  width: 50%;
+  max-width: 300px;
+  height: 100px;
+  }
+
+.imagen {
+  width:250px;
+  height:250px;
+  margin:auto;
+  display:block;
+  border-radius:50%;
+  /*box-shadow: 5px 5px 5px #ccc;
+  padding: 10px;
+  border: 10px solid #ccc;*/
+}
+
+#btncifrar {
+  text-shadow: black;
+  font-weight: 500;
+  font-size: 16px;
+  color:brown;
+  /*padding-top:4px;
+  padding-bottom:4px;
+  padding-left:15px;
+  padding-right:15px;
+  border-width: 5px;
+  border-style: shadow;*/
+  border-radius:30px;
+}
+#btndescifrar {
+  text-shadow: black;
+  font-weight: 500;
+  font-size: 16px;
+  color:brown;
+  /*padding-top:4px;
+  padding-bottom:4px;
+  padding-left:15px;
+  padding-right:15px;
+  border-width: 5px;
+  border-style: shadow;*/
+  border-radius:30px;
+
+
+/*.caja_padre {
+  float: center;
+}
+*/
+
+.caja1 {
+  position: absolute;
+  top:480px;
+  bottom:0;
+  right: 100px;
+  left:0;
+  float: left;
+}
+  
+.caja2 {
+  position: absolute;
+  top: 480px;
+  bottom:0;
+  right:0;
+  left: 500px;
+  float: right;
+}
+
+/*.caja3 {
+  position: absolute;
+  top: ;
+  bottom: ;
+  right: ;
+  left: 600px;
+  float: center;
+}
+*/
+
+
