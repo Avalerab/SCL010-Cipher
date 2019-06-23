@@ -4,48 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cifrado y descifrado con botones</title>
+    <title>Proyecto Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css"> 
     
 </head>
 
 <body>
-  <!--Pag1-->
-  <div id="contenedor">
-    <h1>Bienvenido a su portal</h1>
-    <h2>Cifrado y Descifrado de Mensajes</h2>
-    <h3>Por favor introduzca el mensaje y Offset deseado</p>
+  <header class="titulo"></header>
+  <header class="contenido"></header>
+      <section class="botoncifrar"></section>
+      <section class="botondescifrar"></section>
+      <section class="imagen"></section>
+  <header class="resultado"></header>
+  <footer class="footer"></footer>
+  
+  <div id="titulo">
+      <figure>
+      <div id="logo">
+      <img class="logo" src="http://www.imagenonline.com/imagenes/1/1068-b971d8a8556ed29debf5d7341936d280fdbda58f.jpg" style="max-width: 20%;height:auto;">
+      <figcaption>Bienvenidos al sistema de codificación de mensajes confidenciales de empresas AV Enterprises Corporation</figcaption>
+      </div>  
+      </figure>
+      <h1>Cifrado y Descifrado de Mensajes</h1>
+    </div>
+  
+    
+  <div id="contenido">
+    <h2>Por favor introduzca el Mensaje y Offset deseado</h2>
     <div style="display:inline">  
-    <input type="text" id="mCifrar" placeholder="Mensaje">
-    <input type="number" id="ns" placeholder="Offset">
-    <h4>Seleccione la acción que desea ejecutar</h4>
+    <input type="text" id="mensaje" placeholder="Mensaje">
+    <input type="number" id="offset" placeholder="Offset">
+    <h3>Seleccione la acción que desea ejecutar</h3>
     
-    <div class="caja_padre">
-    <div class="caja1">
-    <button id="btncifrar" onclick="btncifrar()">encode</button>
+    <div id="botoncifrar">
+    <button id="btncifrar">Cifrar</button>
     </div>
     
-    <div class="caja2">
-    <button id="btndescifrar" onclick="btndescifrar()">decode</button>
+    <div id="botondescifrar">
+    <button id="btndescifrar">Descifrar</button>
     </div>
-
-    <div class="caja3">
-     <img class="imagen" src="http://www.imagenonline.com/imagenes/1/995-f9533cfe937efaa12b3db11ce94b1e175012edb3.jpg" alt="">
+   
+    <div id="imagen">
+    <img class="imagen" src="http://www.imagenonline.com/imagenes/1/995-f9533cfe937efaa12b3db11ce94b1e175012edb3.jpg" style="max-width:30%;height:auto;">
     </div>
-    </div>
-  </div>
-
+ </div>
+    
     <h4>Resultado</h4>
     <div id="result">
     <p id="resultado"></p>  
     </div>
-  
-
-<script src="app.js"></script>
+  </div>  
       
-<div id="footer"></div>
-<h5>2019 Copyright AV Software Designs</h5>
+    <div id="footer">
+    <h5>2019 Copyright AV Software Designs</h5>
+    </div>
 
-</body>
+   <script src="cipher.js"></script>
+    <script src="index.js"></script>
+ </body>
 </html>
-

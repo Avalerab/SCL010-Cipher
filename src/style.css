@@ -1,141 +1,169 @@
 /* Acá va tu código */
 body {
-    font-family: Helvetica, Arial, Sans-serif;
-    color: white;
-    background-color: orange ;
-    text-align: center;
-    font-size: 28px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, Sans-serif;
+  color: white;
+  background-color: rgb(236, 191, 106) ;
+  text-align: center;
+  font-size: 80%;
 } 
- 
-/*.main { flex: 20px } 
-.footer { order: 4; }
 
-#wrapper * {
-    padding: 20px;
-    font-size: 20px;
-    border: 20px solid rgba(0,0,0,0.5);
-  }
-*/
+.titulo, .contenido, .resultado, .footer {
+/*padding: 1em, 2em;*/
+float: center;
+box-sizing: border-box;
+}
+
+.titulo {
+height: 0;
+top: auto;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+.contenido {
+width: 0;
+top: 0;
+bottom:0;
+right: 0;
+left: 0;
+float: center;
+}
+
+.resultado {
+width: 0;
+height: auto;
+padding: 20px;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+float: 0;
+}
+
+.result::before {
+background-color:lightgray;
+font-size:1.5em;
+border:1px dashed purple;
+color: purple;
+}
+
+.footer {
+width: 5;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+float: center;
+}
+
+/* Para todas las resoluciones mqueries */
+@media screen and (max-width:1024px) and (min-width: 780px){
+body {
+  font-size:100%;}
+.titulo, .contenido, .resultado, .footer {
+  width: 50%;}
+}
+
+@media screen and (max-width:780px) and (min-width: 480px) {
+body {
+  font-size:100%;}
+.titulo, .contenido, .resultado, .footer {
+  width: 50%;}
+}
+
+@media screen and (max-width:480px) {
+body {
+  font-size: 100%;}
+.titulo, .contenido, .resultado, .footer {
+  width: 35%;}
+}
 
 h1{
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
-  text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+color: purple;
+font-size: 1.4em;
+text-shadow: 1px 1px 1px white;
+background: linear-gradient(to bottom, rgb(255, 253, 253), rgba(160, 46, 103, 0.1));
+padding: 3px;
+text-align: center;
+box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
 }
 
 h2{
-  color: gray;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
-  text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
-}
-h3{
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
-  text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
-}
-h4{
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
-  text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
-  margin: auto;
-}
-h5{
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
-  text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+color: white;
+font-size: 1.2em;
+text-shadow: 1px 1px 1px black;
+background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+padding: 3px;
+text-align: center;
+box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
 }
 
-.contenedor1 {
-  background: #C45208;
-  width: 50%;
-  max-width: 300px;
-  height: 100px;
-  }
+h3{
+top: 5px;
+color: white;
+font-size: 1.2em;
+text-shadow: 1px 1px 1px black;
+background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+padding: 3px;
+text-align: center;
+box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+margin: auto;
+}
+
+h4{
+  color: purple;
+  font-size: 1.4em;
+  text-shadow: 1px 1px 1px white;
+  background: linear-gradient(to bottom, rgb(192, 190, 190), rgba(83, 24, 75, 0.1));
+  padding: 3px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(241, 165, 222, 0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
+
+
+h5{
+color: white;
+font-size: 0.8em;
+text-shadow: 1px 1px 1px gray;
+background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+padding: 3px;
+text-align: center;
+box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+}
 
 .imagen {
-  width:250px;
-  height:250px;
+max-width: 100%;
+height:auto;
+margin:auto;
+display:block;
+border-radius:50%;
+}
+
+.logo {
+  max-width: 100%;
+  width: 80%;
+  height:auto;
   margin:auto;
   display:block;
-  border-radius:50%;
-  /*box-shadow: 5px 5px 5px #ccc;
-  padding: 10px;
-  border: 10px solid #ccc;*/
+  border-radius:10%;
 }
 
 #btncifrar {
-  text-shadow: black;
-  font-weight: 500;
-  font-size: 16px;
-  color:brown;
-  /*padding-top:4px;
-  padding-bottom:4px;
-  padding-left:15px;
-  padding-right:15px;
-  border-width: 5px;
-  border-style: shadow;*/
-  border-radius:30px;
+text-shadow: black;
+font-weight: 500;
+font-size: 18px;
+color: purple;
+border-radius:30px;
 }
+
 #btndescifrar {
-  text-shadow: black;
-  font-weight: 500;
-  font-size: 16px;
-  color:brown;
-  /*padding-top:4px;
-  padding-bottom:4px;
-  padding-left:15px;
-  padding-right:15px;
-  border-width: 5px;
-  border-style: shadow;*/
-  border-radius:30px;
-
-
-/*.caja_padre {
-  float: center;
+text-shadow: black;
+font-weight: 500;
+font-size: 18px;
+color:purple;
+border-radius:30px;
 }
-*/
 
-.caja1 {
-  position: absolute;
-  top:480px;
-  bottom:0;
-  right: 100px;
-  left:0;
-  float: left;
-}
   
-.caja2 {
-  position: absolute;
-  top: 480px;
-  bottom:0;
-  right:0;
-  left: 500px;
-  float: right;
-}
-
-/*.caja3 {
-  position: absolute;
-  top: ;
-  bottom: ;
-  right: ;
-  left: 600px;
-  float: center;
-}
-*/
-
-

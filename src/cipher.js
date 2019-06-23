@@ -1,56 +1,43 @@
 window.cipher = {
-  encode: () => {
-    function btncifrar() {
-      console.log(m);
-      let nss = parseInt(e);
-      //Chequeamos el texto, para convertir todas las letras en mayusculas
-      let mMayuscula =m.toUpperCase(); 
-      console.log(mMayuscula);
-      //Obtenemos el codigo ASCii de cada letra del mensaje  
-      let cifrado = "";
-      let resultadoASCii='';
-      let nuevoASCii='';
-  
-      for (let i=0; i<mMayuscula.length; i++){ 
-      resultadoASCii = mMayuscula.charCodeAt(i);
-      // Mostramos los ACSii en la consola
-      console.log("Esto es el ASCii original" + resultadoASCii);
-      nuevoASCii = ((resultadoASCii -65 +nss)%26 + 65);
-      console.log(nuevoASCii);
-      //Ciframos el mensaje
-      cifrado += String.fromCharCode(nuevoASCii);  
-      console.log(cifrado);
-     }
-     }  
-    },
-  
- decode: ()=> {
-      //Decode: Descifrado de mensaje
-      function btndescifrar() {
-      console.log(m);
-      //Convertimos el Offset en numero
-      let nss = parseInt(e);
-      //Transformamos las letras del mensaje en mayusculas
-      let mMayuscula =m.toUpperCase(); 
-      console.log(mMayuscula);
-      //Obtenemos los codigos ASCii del mensaje a descifrar
-      let mdescifrado = "";
-      let resultadoASCii2='';
-      let nuevoASCii2='';
-
-      for (let i=0; i<mMayuscula.length; i++){ 
-      resultadoASCii2 = m.charCodeAt(i);
-      nuevoASCii2 = (resultadoASCii2 -nss);
-      //Mostramos los codigos ASCii en la consola
-      console.log(nuevoASCii2);
-      //Obtenemos el mensaje original o descifrado
-      mdescifrado += String.fromCharCode(nuevoASCii2);
-      //Mostramos el mensaje original en la consola
-      console.log("Tu mensaje original era: " +mdescifrado);
-      
-      }
-      }      
-
+  encode: (mensaje, offset) => {
+    //console.log(mensaje);
+    //Declaro todas las variables a usar, paso a mayusculas las letras y defino el offset como un numero
+    /*let isUpperCase = mensaje.toUpperCase();*/
+    let isUpperCase = mensaje.toUpperCase();
+    let numero = parseInt(offset);
+    let ASCii = "";
+    let nuevoASCii = "";
+    let cifrado ="";
+    //Para cifrar cada letra del string, iteramos con un for
+    for (let i=0; i < isUpperCase.length; i++){ 
+     //Obtengo los ASCii del string
+     ASCii = isUpperCase.charCodeAt(i);
+     if (ASCii===32) {nuevoASCii=32}
+     if (ASCii!=32) {
+     nuevoASCii = (ASCii - 65 + numero)%26 + 65;}
+     cifrado += String.fromCharCode(nuevoASCii);
     }
-  
-}
+     // Para que el HTML me lea el resultado obtenido, uso la funcion retur
+      return cifrado;
+    },
+    
+    
+  decode: (mensaje, offset) => {
+    //Descifrado de mensaje
+    let descifrado = "";
+    let isUpperCase = mensaje.toUpperCase();
+    let ASCii = "";
+    let nuevoASCii = "";
+    let numero = parseInt(offset);
+    for (let i=0; i<mensaje.length; i++){ 
+    //console.log(mensaje);
+    ASCii = isUpperCase.charCodeAt(i);
+    if (ASCii === 32){nuevoASCii=32}
+    if (ASCii !=32){
+    nuevoASCii = (ASCii - numero);}
+    descifrado += String.fromCharCode(nuevoASCii);
+    //console.log(descifrado);
+    } 
+    return descifrado;
+  }
+}        
